@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Sector 1">
+      <UniqueIdentifier>{9c375e72-a0fd-478b-876a-c5e0ea14b978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sector 2+">
+      <UniqueIdentifier>{a6d77e0a-f115-417d-b9ab-fafd7348d703}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bootloader.asm">
+      <Filter>Source Files\Sector 1</Filter>
+    </None>
+    <None Include="DiskRead.asm">
+      <Filter>Source Files\Sector 1</Filter>
+    </None>
+    <None Include="print.asm">
+      <Filter>Source Files\Sector 1</Filter>
+    </None>
+    <None Include="ExtendedProgram.asm">
+      <Filter>Source Files\Sector 2+</Filter>
+    </None>
+    <None Include="gdt.asm">
+      <Filter>Source Files\Sector 2+</Filter>
+    </None>
+    <None Include="CPUID.asm">
+      <Filter>Source Files\Sector 2+</Filter>
+    </None>
+    <None Include="SimplePaging.asm">
+      <Filter>Source Files\Sector 2+</Filter>
+    </None>
+    <None Include="link.ld">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="Binaries.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="IDT.asm">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Typedefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextModeColorCodes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IDT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="compileasm.bat">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="logoascii.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
