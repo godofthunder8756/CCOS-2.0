@@ -1,2 +1,3 @@
 # CCOS-2.0
-Ignore all other repos
+Currently: Working on Memory Mapping 
+Next: Dynamic Memory Allocation
