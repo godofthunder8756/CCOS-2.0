@@ -20,6 +20,6 @@ extern "C" void _start() {
 	PrintString("\n\r");
 	
 	float testFloat = 3.7f;
-	PrintString(IntegerToString((int)testFloat));
+	PrintString(FloatToString(testFloat, 2));
 	return;
 }
