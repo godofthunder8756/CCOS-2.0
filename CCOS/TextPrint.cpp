@@ -128,6 +128,10 @@ const char* FloatToString(float value, uint_8 decimalPlaces) {
 	char* intPtr = (char*)IntegerToString((int)value);
 	char* floatPtr = floatToStringOutput;
 
+	if (value < 0) {
+		value *= -1;
+	}
+
 	while (*intPtr != 0) {
 		*floatPtr = *intPtr;
 		intPtr++;
