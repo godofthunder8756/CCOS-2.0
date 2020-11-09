@@ -63,6 +63,14 @@ void PrintString(const char* str, uint_8 color = BACKGROUND_BLACK | FOREGROUND_W
 	SetCursorPosition(index);
 }
 
+void PrintChar(char chr, uint_8 color = BACKGROUND_BLACK | FOREGROUND_WHITE) 
+{
+	*(VGA_MEMORY + CursorPosition * 2) = chr;
+	*(VGA_MEMORY + CursorPosition * 2 + 1) = color;
+
+	SetCursorPosition(CursorPosition + 1);
+}
+
 char hexToStringOutput[128];
 template<typename T>
 const char* HexToString(T value) {

@@ -71,6 +71,9 @@
     <ClCompile Include="IDT.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="KBScanCodeSet1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="test.txt">

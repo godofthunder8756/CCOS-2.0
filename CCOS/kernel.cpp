@@ -1,6 +1,8 @@
 #include "TextPrint.cpp"
 #include "IDT.cpp"
 
+void // Part 14 1:08
+
 extern const char Logo[];
 extern const char Info[];
 

@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="IDT.cpp" />
     <ClCompile Include="IO.cpp" />
+    <ClCompile Include="KBScanCodeSet1.cpp" />
     <ClCompile Include="kernel.cpp" />
     <ClCompile Include="TextModeColorCodes.cpp" />
     <ClCompile Include="TextPrint.cpp" />
