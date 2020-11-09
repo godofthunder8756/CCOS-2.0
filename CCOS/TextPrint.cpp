@@ -93,6 +93,15 @@ const char* HexToString(T value) {
 char integerToStringOutput[128];
 template<typename T>
 const char* IntegerToString(T value) {
+
+	uint_8 isNegative = 0;
+
+	if (value < 0) {
+		isNegative = 1;
+		value *= -1;
+		integerToStringOutput[0] = '-';
+	}
+
 	uint_8 size = 0;
 	uint_64 sizeTester = (uint_64)value;
 	while (sizeTester / 10 > 0) {
@@ -105,11 +114,11 @@ const char* IntegerToString(T value) {
 	while (newValue / 10 > 0) {
 		uint_8 remainder = newValue % 10;
 		newValue /= 10;
-		integerToStringOutput[size - index] = remainder + 48;
+		integerToStringOutput[isNegative + size - index] = remainder + 48;
 		index++;
 	}
 	uint_8 remainder = newValue % 10;
-	integerToStringOutput[size - index] = remainder + 48;
-	integerToStringOutput[size + 1] = 0;
+	integerToStringOutput[isNegative + size - index] = remainder + 48;
+	integerToStringOutput[isNegative + size + 1] = 0;
 	return integerToStringOutput;
 }

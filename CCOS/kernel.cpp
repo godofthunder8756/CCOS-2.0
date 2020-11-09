@@ -15,6 +15,6 @@ extern "C" void _start() {
 	PrintString("\n\r");
 	PrintString(Info);
 	PrintString("\n\r");
-	PrintString(IntegerToString(123456789));
+	PrintString(IntegerToString(-123456789));
 	return;
 }
