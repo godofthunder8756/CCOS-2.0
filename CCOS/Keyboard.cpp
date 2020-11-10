@@ -1,10 +1,10 @@
 #pragma once
-#include "Typedefs.cpp"
-#include "TextPrint.cpp"
+#include "Keyboard.h"
 
 bool LeftShiftPressed = false;
 bool RightShiftPressed = false;
 uint_8 LastScanCode;
+
 void StandardKeyboardHandler(uint_8 scanCode, uint_8 chr) {
 	if (chr != 0) {
 		switch (LeftShiftPressed | RightShiftPressed) {

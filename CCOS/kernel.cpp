@@ -1,8 +1,8 @@
-#include "TextPrint.cpp"
-#include "IDT.cpp"
+#include "TextPrint.h"
+#include "IDT.h"
 
-#include "Keyboard.cpp"
-#include "MemoryMap.cpp"
+#include "Keyboard.h"
+#include "MemoryMap.h"
 
 extern const char Logo[];
 extern const char Info[];

@@ -154,18 +154,25 @@
   <ItemGroup>
     <ClCompile Include="IDT.cpp" />
     <ClCompile Include="IO.cpp" />
-    <ClCompile Include="KBScanCodeSet1.cpp" />
+    <ClCompile Include="KBScanCodeSet1.h" />
     <ClCompile Include="kernel.cpp" />
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="MemoryMap.cpp" />
-    <ClCompile Include="TextModeColorCodes.cpp" />
+    <ClCompile Include="TextModeColorCodes.h" />
     <ClCompile Include="TextPrint.cpp" />
-    <ClCompile Include="Typedefs.cpp" />
+    <ClCompile Include="Typedefs.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="compileasm.bat" />
     <Text Include="logoascii.txt" />
     <Text Include="test.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IDT.h" />
+    <ClInclude Include="IO.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="MemoryMap.h" />
+    <ClInclude Include="TextPrint.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
