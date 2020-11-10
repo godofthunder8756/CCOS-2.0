@@ -6,4 +6,4 @@ Latest: SSE Activated, Memory Map Created, Fixed compilerasm.bat bug with pragma
 
 Currently: Working on Dynamic Memory Allocation
 
-Next: Likely Still Working on Dynamic Memory Allocation
+Next: CMake and Sound Support
