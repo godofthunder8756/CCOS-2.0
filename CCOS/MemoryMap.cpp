@@ -10,6 +10,11 @@ struct MemoryMapEntry {
 };
 
 extern uint_8 MemoryRegionCount;
+uint_8 UsableMemoryRegionsCount;
+
+
+MemoryMapEntry* UsableMemoryRegions[10];
+
 
 void PrintMemoryMap(MemoryMapEntry* memoryMap, uint_16 position) {
 	SetCursorPosition(position);
@@ -21,6 +26,29 @@ void PrintMemoryMap(MemoryMapEntry* memoryMap, uint_16 position) {
 	PrintString("Memory Type: "); PrintString(IntegerToString(memoryMap->RegionType));
 	SetCursorPosition(position + 240);
 	PrintString("Memory Attributes: "); PrintString(IntegerToString(memoryMap->ExtendedAttributes));
-	SetCursorPosition(position + 320);
+	SetCursorPosition(position + 400);
 
+}
+
+bool MemoryRegionsGot = false;
+
+MemoryMapEntry** GetUsableMemoryRegions() {
+	
+	if (MemoryRegionsGot) {
+		return UsableMemoryRegions;
+	}
+
+	uint_8 UsableRegionIndex;
+	for (uint_8 i = 0; i < MemoryRegionCount; i++) {
+		MemoryMapEntry* memMap = (MemoryMapEntry*)0x5000;
+		memMap += i;
+		if (memMap->RegionType == 1) {
+			UsableMemoryRegions[UsableRegionIndex] = memMap;
+			UsableRegionIndex++;
+		}
+	}
+	UsableMemoryRegionsCount = UsableRegionIndex;
+	
+	MemoryRegionsGot = true;
+	return UsableMemoryRegions;
 }

@@ -18,9 +18,11 @@ extern "C" void _start() {
 	PrintString(Info);
 	PrintString("\n\r");
 	*/
-	for (uint_8 i = 0; i < MemoryRegionCount; i++) {
-		MemoryMapEntry* memMap = (MemoryMapEntry*)0x5000;
-		memMap += i;
+
+	MemoryMapEntry** UsableMemoryMaps = GetUsableMemoryRegions();
+
+	for (uint_8 i = 0; i < UsableMemoryRegionsCount; i++) {
+		MemoryMapEntry* memMap = UsableMemoryMaps[i];
 		PrintMemoryMap(memMap, CursorPosition);
 	}
 
