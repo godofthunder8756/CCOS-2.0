@@ -10,6 +10,8 @@ struct MemorySegmentHeader {
 	bool Free;
 };
 
-extern void InitializeHeap(uint_64 headpAddress, uint_64 heapLength);
+void InitializeHeap(uint_64 headpAddress, uint_64 heapLength);
 
-extern void* malloc(uint_64 size);
+void* malloc(uint_64 size);
+
+void free(void* address);
