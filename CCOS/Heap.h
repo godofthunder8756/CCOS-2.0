@@ -12,6 +12,8 @@ struct MemorySegmentHeader {
 
 void InitializeHeap(uint_64 headpAddress, uint_64 heapLength);
 
+void* calloc(uint_64 size);
+
 void* malloc(uint_64 size);
 
 void free(void* address);

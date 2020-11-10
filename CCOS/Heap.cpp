@@ -1,4 +1,6 @@
 #include "Heap.h"
+#include "Typedefs.h"
+#include "Memory.h"
 
 MemorySegmentHeader* FirstFreeMemorySegment;
 
@@ -10,6 +12,16 @@ void InitializeHeap(uint_64 headpAddress, uint_64 heapLength) {
 	FirstFreeMemorySegment->NextFreeSegment = 0;
 	FirstFreeMemorySegment->PreviousFreeSegment = 0;
 	FirstFreeMemorySegment->Free = true;
+}
+
+void* calloc(uint_64 size) {
+	void* mallocVal = malloc(size);
+	memset(mallocVal, 0, size);
+	return mallocVal;
+}
+
+void* calloc(uint_64 num, uint_64 size) {
+	return calloc(num * size);
 }
 
 void* malloc(uint_64 size) {

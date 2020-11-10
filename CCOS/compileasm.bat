@@ -18,6 +18,9 @@ wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "T
 
 wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "Heap.cpp" -o "Heap.o"
 
+wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "Memory.cpp" -o "Memory.o"
+
+
 wsl $WSLENV/x86_64-elf-ld -T"link.ld"
 
 copy /b bootloader.bin+kernel.bin bootloader.flp

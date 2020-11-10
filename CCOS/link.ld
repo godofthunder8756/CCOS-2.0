@@ -11,6 +11,7 @@ INPUT
 	MemoryMap.o
 	TextPrint.o
 	Heap.o
+	Memory.o
 	Keyboard.o
 	Binaries.o
 )
