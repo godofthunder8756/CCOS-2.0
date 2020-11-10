@@ -69,6 +69,16 @@ void* malloc(uint_64 size) {
 	return 0;
 }
 
+void* realloc(void* address, uint_64 newSize) {
+	MemorySegmentHeader* oldSegmentHeader = (MemorySegmentHeader*)address - 1;
+	uint_64 smallerSize = newSize;
+	if (oldSegmentHeader->MemoryLength < newSize) smallerSize = oldSegmentHeader->MemoryLength;
+	void* newMem = malloc(newSize);
+	memcpy(newMem, address, smallerSize);
+	free(address);
+	return(newMem);
+}
+
 void CombineFreeSegments(MemorySegmentHeader* a, MemorySegmentHeader* b) {
 	if (a == 0) return;
 	if (b == 0) return;

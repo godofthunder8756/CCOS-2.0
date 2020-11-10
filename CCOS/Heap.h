@@ -1,5 +1,6 @@
 #pragma once
 #include "Typedefs.h"
+#include "Memory.h"
 
 struct MemorySegmentHeader {
 	uint_64 MemoryLength;
@@ -13,6 +14,8 @@ struct MemorySegmentHeader {
 void InitializeHeap(uint_64 headpAddress, uint_64 heapLength);
 
 void* calloc(uint_64 size);
+
+void* realloc(void* address, uint_64 newSize);
 
 void* malloc(uint_64 size);
 
