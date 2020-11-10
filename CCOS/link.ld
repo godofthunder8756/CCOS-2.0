@@ -10,6 +10,7 @@ INPUT
 	IO.o
 	MemoryMap.o
 	TextPrint.o
+	Heap.o
 	Keyboard.o
 	Binaries.o
 )

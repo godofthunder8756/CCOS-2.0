@@ -152,6 +152,7 @@
     <None Include="SimplePaging.asm" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Heap.cpp" />
     <ClCompile Include="IDT.cpp" />
     <ClCompile Include="IO.cpp" />
     <ClCompile Include="KBScanCodeSet1.h" />
@@ -168,6 +169,7 @@
     <Text Include="test.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Heap.h" />
     <ClInclude Include="IDT.h" />
     <ClInclude Include="IO.h" />
     <ClInclude Include="Keyboard.h" />

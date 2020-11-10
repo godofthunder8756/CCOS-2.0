@@ -16,6 +16,7 @@ wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "M
 
 wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "TextPrint.cpp" -o "TextPrint.o"
 
+wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "Heap.cpp" -o "Heap.o"
 
 wsl $WSLENV/x86_64-elf-ld -T"link.ld"
 
