@@ -1,4 +1,3 @@
-#pragma once
 #include "TextPrint.h"
 
 uint_16 CursorPosition;

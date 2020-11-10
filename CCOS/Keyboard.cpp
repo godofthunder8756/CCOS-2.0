@@ -1,4 +1,3 @@
-#pragma once
 #include "Keyboard.h"
 
 bool LeftShiftPressed = false;

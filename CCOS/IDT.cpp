@@ -1,4 +1,3 @@
-#pragma once
 #include "IDT.h"
 
 extern IDT64 _idt[256];

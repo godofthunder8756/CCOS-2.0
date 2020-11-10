@@ -13,67 +13,55 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Sector 1">
+    <Filter Include="Source Files\Assembly">
+      <UniqueIdentifier>{44745ab5-68c0-4971-b43a-372cdb84e9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assembly\Sector 1">
       <UniqueIdentifier>{9c375e72-a0fd-478b-876a-c5e0ea14b978}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Sector 2+">
+    <Filter Include="Source Files\Assembly\Sector 2+">
       <UniqueIdentifier>{a6d77e0a-f115-417d-b9ab-fafd7348d703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CPP">
+      <UniqueIdentifier>{8c2cd646-f0a8-4bd4-8b8b-e48350846444}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="bootloader.asm">
-      <Filter>Source Files\Sector 1</Filter>
+      <Filter>Source Files\Assembly\Sector 1</Filter>
     </None>
     <None Include="DiskRead.asm">
-      <Filter>Source Files\Sector 1</Filter>
-    </None>
-    <None Include="print.asm">
-      <Filter>Source Files\Sector 1</Filter>
+      <Filter>Source Files\Assembly\Sector 1</Filter>
     </None>
     <None Include="ExtendedProgram.asm">
-      <Filter>Source Files\Sector 2+</Filter>
+      <Filter>Source Files\Assembly\Sector 2+</Filter>
     </None>
     <None Include="gdt.asm">
-      <Filter>Source Files\Sector 2+</Filter>
+      <Filter>Source Files\Assembly\Sector 2+</Filter>
     </None>
     <None Include="CPUID.asm">
-      <Filter>Source Files\Sector 2+</Filter>
+      <Filter>Source Files\Assembly\Sector 2+</Filter>
     </None>
     <None Include="SimplePaging.asm">
-      <Filter>Source Files\Sector 2+</Filter>
+      <Filter>Source Files\Assembly\Sector 2+</Filter>
     </None>
     <None Include="link.ld">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="Binaries.asm">
-      <Filter>Source Files</Filter>
+    <None Include="print.asm">
+      <Filter>Source Files\Assembly\Sector 1</Filter>
     </None>
-    <None Include="IDT.asm">
-      <Filter>Source Files</Filter>
+    <None Include="Binaries.asm">
+      <Filter>Source Files\Assembly</Filter>
     </None>
     <None Include="DetectMemory.asm">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Assembly</Filter>
+    </None>
+    <None Include="IDT.asm">
+      <Filter>Source Files\Assembly</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="kernel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TextPrint.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IO.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IDT.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MemoryMap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TextModeColorCodes.h">
       <Filter>Header Files</Filter>
     </ClCompile>
@@ -82,6 +70,24 @@
     </ClCompile>
     <ClCompile Include="KBScanCodeSet1.h">
       <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="IO.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="IDT.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryMap.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="TextPrint.cpp">
+      <Filter>Source Files\CPP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
