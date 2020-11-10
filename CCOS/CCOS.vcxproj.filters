@@ -51,6 +51,9 @@
     <None Include="IDT.asm">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="DetectMemory.asm">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="kernel.cpp">
@@ -75,6 +78,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Keyboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryMap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

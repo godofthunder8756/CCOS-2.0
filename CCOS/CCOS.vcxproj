@@ -142,6 +142,7 @@
     <None Include="Binaries.asm" />
     <None Include="bootloader.asm" />
     <None Include="CPUID.asm" />
+    <None Include="DetectMemory.asm" />
     <None Include="DiskRead.asm" />
     <None Include="ExtendedProgram.asm" />
     <None Include="gdt.asm" />
@@ -156,6 +157,7 @@
     <ClCompile Include="KBScanCodeSet1.cpp" />
     <ClCompile Include="kernel.cpp" />
     <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="MemoryMap.cpp" />
     <ClCompile Include="TextModeColorCodes.cpp" />
     <ClCompile Include="TextPrint.cpp" />
     <ClCompile Include="Typedefs.cpp" />
