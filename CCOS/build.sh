@@ -28,5 +28,4 @@ wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "s
 
 wsl $WSLENV/x86_64-elf-ld -T"link.ld"
 
-wsl /bin/cat objects_and_binaries/bootloader.bin objects_and_binaries/kernel.bin > product/CCOS.flp
-pause
+wsl /bin/cat objects_and_binaries/bootloader.bin objects_and_binaries/kernel.bin > product/CCOS.iso
