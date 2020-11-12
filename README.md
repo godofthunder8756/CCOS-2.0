@@ -6,5 +6,5 @@ Latest: SSE Activated, Memory Map Created, Dynamic Memory Allocation, and Comman
 
 Currently Working On: FS Support
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![Home Screen](/unknown.png)
+![CLI Screen](/unknown1.png)
