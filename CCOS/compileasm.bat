@@ -26,7 +26,9 @@ wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "s
 
 wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "source/C++/commands.cpp" -o "objects_and_binaries/commands.o"
 
+wsl $WSLENV/x86_64-elf-gcc -Ttext 0x8000 -ffreestanding -mno-red-zone -m64 -c "source/C++/ATA.cpp" -o "objects_and_binaries/ATA.o"
+
 wsl $WSLENV/x86_64-elf-ld -T"link.ld"
 
-wsl /bin/cat objects_and_binaries/bootloader.bin objects_and_binaries/kernel.bin > product/CCOS.flp
+wsl /bin/cat objects_and_binaries/bootloader.bin objects_and_binaries/kernel.bin > product/CCOS.img
 pause

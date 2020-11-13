@@ -17,6 +17,7 @@ objects_and_binaries/binaries.o
 objects_and_binaries/shell.o
 objects_and_binaries/BonusFunctions.o
 objects_and_binaries/commands.o
+objects_and_binaries/ATA.o
 )
 
 OUTPUT
